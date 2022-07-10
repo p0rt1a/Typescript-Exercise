@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var Enemy_1 = require("./Enemy");
+var Player_1 = require("./Player");
+var enemy = new Enemy_1.Enemy("Colossus", 100, 20);
+var hero = new Player_1.Player("Xenon the Thunder", 150, 50);
+enemy.attack(hero);
+hero.heal();
+hero.attack(enemy);
+hero.attack(enemy);
